@@ -1,18 +1,3 @@
-
-# b. Método letra_i(n)
-# n = 5
-# *****
-# *
-# *
-# *
-# *****
-# c. Método letra_z(n)
-# n = 5
-# *****
-# *
-# *
-# *
-# *****
 # d. Método letra_x(n)
 # n = 5
 # * *
@@ -55,7 +40,7 @@ def letra_o(n)
     end
 end
 
-print letra_o(7)
+letra_o(7)
 #---------------------------------------------------------------------
 # b. Método letra_i(n)
 # n = 5
@@ -64,7 +49,6 @@ print letra_o(7)
 # *
 # *
 # *****
-
 def letra_i(n)
     n.times do |i|
         if i ==0 or i==n-1
@@ -81,20 +65,13 @@ def letra_i(n)
     end
 end
 
-#---------------------------------------------------------------------
-
-def letra_z(n)
-    n.times do |i|
-        if i ==0 or i==n-1
-            for j in 1..n do
-                print "*"
-            end
-            print "\n"
-        else
-            
-        end
-    end
-end
-
 letra_i(7)
 
+#---------------------------------------------------------------------
+# c. Método letra_z(n)
+# n = 5
+# *****
+# *
+# *
+# *
+# *****
