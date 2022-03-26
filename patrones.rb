@@ -75,3 +75,23 @@ letra_i(7)
 # *
 # *
 # *****
+def letra_z(n)
+    contador = 2
+    n.times do |i|
+        if i ==0 or i==n-1
+            for j in 1..n do
+                print "*"
+            end
+            print "\n"
+        else
+            for j in 1..(n-contador) do
+                print "\s"
+           end
+           print "*\n"
+           contador +=1
+           
+        end
+    end
+end
+
+letra_z(4)
