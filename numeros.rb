@@ -13,12 +13,13 @@
 nbr = ARGV[0].to_i
 
 # Primer ciclo que va a dibujar la columna principal
-
 nbr.times do |i|
     val_base=0
+
     (i+1).times do |j|
         print val_base.next
         val_base= val_base.next
     end
+  
     print "\n"
 end
