@@ -1,10 +1,4 @@
-# e. Método numero_cero(n)
-# n = 5
-# *****
-# ** *
-# * * *
-# * **
-# *****
+
 # f. Método navidad(n)
 
 # Patrones
@@ -117,4 +111,46 @@ def letra_x(n)
     end
 end
 
-letra_x(11)
+letra_x(5)
+
+#---------------------------------------------------------------------
+# e. Método numero_cero(n)
+# n = 5
+# *****
+# * * *
+# * * *
+# * * *
+# *****
+
+# 1 1 1 1 1 i==0 j==0 || i==0 j==1 || i==0 j==2 || i==0 j==3 || i==0 j==4 
+
+# 1 1 0 0 1 i==1 j==0 || i==1 j==1 || i==1 j==4
+# 1 0 1 0 1 i==2 j==0 || i==2 j==2 || i==2 j==4
+# 1 0 0 1 1 i==3 j==0 || i==3 j==3 || i==3 j==4
+
+# 1 1 1 1 1 i==4 j==0 || i==4 j==1 || i==4 j==2 || i==4 j==3 || i==4 j==4
+
+def numero_cero(n)
+    n.times do |i|
+        if i ==0 or i==n-1
+            for j in 1..n do
+                print "* "
+            end
+            print "\n"
+        else
+            n.times do |j|
+                if j==0
+                    print "* "
+                elsif i==j
+                    print "* "
+                elsif j==n-1
+                    print "*\n"
+                else
+                    print "  "
+                end
+            end
+        end
+    end
+end
+
+numero_cero(11)
